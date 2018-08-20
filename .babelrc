@@ -1,17 +1,18 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
         "targets": {
-          "node": "4"
+          "browsers": "IE 11"
         }
       }
     ]
   ],
   "plugins": [
-    "syntax-export-extensions",
-    "transform-object-rest-spread",
-    "transform-react-jsx"
+    "@babel/plugin-syntax-export-default-from",
+    "@babel/plugin-syntax-export-namespace-from",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-transform-react-jsx"
   ]
 }
